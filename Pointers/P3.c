@@ -2,27 +2,25 @@
 #include<stdlib.h>
 int main(){
 
+
+
+int a[5]={1,2,3,4,5};
 int *ptr;
-int N;
- printf("enter the no of elements");
- scanf("%d",&N);
+ptr=a;
 
- ptr = malloc(sizeof(int)*N);
-
- if(ptr != NULL){
-
-    for (int i = 0; i < N; i++)
-    {
-       scanf("%d",(ptr+i));
-    }
+printf("%d \n",*(ptr));
+printf("%d \n",*(ptr+1));
+printf("%d \n",*(ptr+2));
+printf("%d \n",*(ptr+3));
+printf("%d \n",*(ptr+4));
 
 
-    for (int i = 0; i < N; i++)
-    {
-       printf("%d",*(ptr+i));
-    }
-    
- }
+
+// acessing array using pointer 
+printf("%d",ptr[0]);
+
+//we can access the element by both using indexing and  pointer
+
 
 
 
